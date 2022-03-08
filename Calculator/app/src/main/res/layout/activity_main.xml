@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/firstNum"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:maxLength="9"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/action"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNum"
+        tools:ignore="MissingConstraints"
+
+        />
+
+    <EditText
+        android:id="@+id/secondNum"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:maxLength="9"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/equal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNum"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/thirdNum"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        tools:ignore="MissingConstraints" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/plusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7sp"
+                android:backgroundTint="#4799E8"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <Button
+                android:id="@+id/minusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7sp"
+                android:backgroundTint="#4799E8"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                app:srcCompat="@drawable/abc_vector_test" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/multiplyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7sp"
+                android:backgroundTint="#4799E8"
+                android:text="*"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <Button
+                android:id="@+id/divisionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7sp"
+                android:backgroundTint="#4799E8"
+                android:text="/"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonEqual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#4799E8"
+        android:text="="
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+</LinearLayout>
